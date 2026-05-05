@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Travel Planner — Design System
+ * Calm coastal palette: deep ocean primary, warm sand accent, off-white surfaces.
+ * All colors HSL.
+ */
+
+@layer base {
+  :root {
+    --background: 36 33% 97%;
+    --foreground: 210 30% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 30% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 30% 14%;
+
+    --primary: 199 78% 32%;
+    --primary-foreground: 36 33% 97%;
+    --primary-glow: 192 70% 55%;
+
+    --secondary: 200 25% 94%;
+    --secondary-foreground: 210 30% 18%;
+
+    --muted: 200 18% 93%;
+    --muted-foreground: 210 12% 42%;
+
+    --accent: 28 78% 60%;
+    --accent-foreground: 210 30% 14%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 18% 88%;
+    --input: 210 18% 88%;
+    --ring: 199 78% 32%;
+
+    --radius: 0.75rem;
+
+    --gradient-hero: linear-gradient(135deg, hsl(199 78% 32%) 0%, hsl(192 70% 55%) 100%);
+    --gradient-sand: linear-gradient(180deg, hsl(36 33% 97%) 0%, hsl(28 40% 92%) 100%);
+    --shadow-elegant: 0 20px 50px -20px hsl(199 78% 32% / 0.25);
+    --shadow-card: 0 4px 20px -4px hsl(210 30% 14% / 0.08);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 30% 8%;
+    --foreground: 36 33% 96%;
+    --card: 210 30% 11%;
+    --card-foreground: 36 33% 96%;
+    --popover: 210 30% 11%;
+    --popover-foreground: 36 33% 96%;
+    --primary: 192 70% 55%;
+    --primary-foreground: 210 30% 8%;
+    --primary-glow: 199 78% 60%;
+    --secondary: 210 25% 18%;
+    --secondary-foreground: 36 33% 96%;
+    --muted: 210 25% 16%;
+    --muted-foreground: 210 12% 65%;
+    --accent: 28 78% 60%;
+    --accent-foreground: 210 30% 8%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 25% 20%;
+    --input: 210 25% 20%;
+    --ring: 192 70% 55%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground antialiased; font-feature-settings: "ss01", "cv11"; }
+  h1, h2, h3, h4 { @apply font-semibold tracking-tight; }
+}
+
+@layer utilities {
+  .bg-gradient-hero { background: var(--gradient-hero); }
+  .bg-gradient-sand { background: var(--gradient-sand); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .transition-smooth { transition: var(--transition-smooth); }
+}

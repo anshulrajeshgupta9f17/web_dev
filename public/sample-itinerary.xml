@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/itinerary.xsl"?>
+<itinerary>
+  <meta>
+    <title>5 Days in Lisbon</title>
+    <destination>Lisbon, Portugal</destination>
+    <startDate>2025-06-10</startDate>
+    <endDate>2025-06-14</endDate>
+    <coverEmoji>🇵🇹</coverEmoji>
+    <notes>Pastel de nata first thing every morning.</notes>
+    <tags>
+      <tag>europe</tag>
+      <tag>food</tag>
+      <tag>summer</tag>
+    </tags>
+  </meta>
+  <activities>
+    <activity day="1" position="0">
+      <title>Tram 28 ride</title>
+      <location>Praça Martim Moniz</location>
+      <startTime>10:00</startTime>
+      <notes>Beat the crowds — board at the start of the line.</notes>
+    </activity>
+    <activity day="1" position="1">
+      <title>Lunch at Time Out Market</title>
+      <location>Mercado da Ribeira</location>
+      <startTime>13:00</startTime>
+    </activity>
+    <activity day="2" position="0">
+      <title>Belém Tower &amp; Jerónimos Monastery</title>
+      <location>Belém</location>
+      <startTime>09:30</startTime>
+    </activity>
+    <activity day="2" position="1">
+      <title>Pastéis de Belém</title>
+      <location>Rua de Belém 84</location>
+      <startTime>12:00</startTime>
+    </activity>
+  </activities>
+</itinerary>
